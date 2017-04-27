@@ -5,6 +5,18 @@ This program scans the [Vademecum.es](http://vademecum.es) website to obtain a l
 
 If you don't want to run the program by yourself, you [can check the drug list file here](https://github.com/jvilaplana/vademecum-export/blob/master/vademecum.csv).
 
+The resulting CSV file stores the drug name, the national code (Código Nacional) and the URL to access the drug data from vademecum.es.
+
+Sample of the CSV file data:
+
+| `National Code` | `Name` | `URL` |
+| ------------- | ---- | --- |
+| 614537 | A.A.S. Comp. 100 mg | http://vademecum.es/medicamento-a.a.s._ficha_1 |
+| 686580 | A.A.S. Comp. 100 mg | http://vademecum.es/medicamento-a.a.s._ficha_1 |
+| 614560 | A.A.S. Comp. 500 mg | http://vademecum.es/medicamento-a.a.s._ficha_2 |
+| 672905 | A.A.S. Comp. 500 mg | http://vademecum.es/medicamento-a.a.s._ficha_2 |
+| 712249 | ABACAVIR/LAMIVUDINA MYLAN Comp. recub. con película 600 mg/300 mg | http://vademecum.es/medicamento-abacavir%2Flamivudina+mylan_45299 |
+
 ## Requirements
 To run this program the following software is required:
 - git
