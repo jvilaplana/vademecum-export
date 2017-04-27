@@ -1,19 +1,26 @@
 # -*- coding: utf-8 -*-
 
-import urllib2
-from bs4 import BeautifulSoup
 import re
-import string
+import os
 import csv
 import time
+import string
+import urllib2
+from bs4 import BeautifulSoup
+
 
 # We are going to iterate through all leters (a - z).
 letter_list = string.lowercase[:26]
 
+# We check if the results directory exists
+if not os.path.exists('results'):
+    # If it's not there, we create it
+    os.makedirs('results')
+
 # Each letter has its own page with its drug list.
 # We will be saving a CSV file for each starting letter.
 for letter in letter_list:
-    with open('vademecum-' + str(letter) + '.csv', 'wb') as csvfile:
+    with open('results/vademecum-' + str(letter) + '.csv', 'wb') as csvfile:
         # We will be saving the drug code, name and URL.
         fieldnames = ['cod_nacion', 'nombre', 'url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)

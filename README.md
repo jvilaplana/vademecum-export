@@ -30,14 +30,28 @@ To execute the program run the following commands in your terminal:
 source venv/bin/activate
 python vademecum_export.py
 ```
+If the executing is successful, you should see something like:
+```
+$ python vademecum_export.py
+
+Going for letter a
+	Getting drug 614537 (a-1)
+	Getting drug 686580 (a-1)
+	Getting drug 614560 (a-2)
+	Getting drug 672905 (a-2)
+	Getting drug 712249 (a-3)
+  ...
+```
 
 ## Analyze results
 To check how many drugs were successfully retrieved run:
 ```
+cd results/
 find . -name 'vademecum-*' | xargs wc -l
 ```
 
 To combine all the CSV files into a single one run:
 ```
+cd results/
 cat vademecum-* > vademecum.csv
 ```
