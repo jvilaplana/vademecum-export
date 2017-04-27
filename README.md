@@ -3,7 +3,7 @@ Web scraper to export drug data into CSV files.
 
 This program scans the [Vademecum.es](http://vademecum.es) website to obtain a list of all the drugs.
 
-If you don't want to run the program by yourself, you [can check the drug list file here](https://github.com/jvilaplana/vademecum-export/blob/master/vademecum.csv).
+If you don't want to run the program by yourself, you [can check the drug list file here](https://github.com/jvilaplana/vademecum-export/blob/master/results/vademecum.csv).
 
 The resulting CSV file stores the drug name, the national code (Código Nacional) and the URL to access the drug data from vademecum.es.
 
